@@ -1,6 +1,7 @@
 export class AuthenticationService {
 	isAuthenticated(id: number): boolean {
-		return (id == 12345);
+		return this.isAuthenticatedNew(Id.create(id));
+		//return (id == 12345);
 	}
 	isAuthenticatedNew(id: Id): boolean {
 		return (id.equals(Id.create(12345)));
