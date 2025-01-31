@@ -1,4 +1,4 @@
-export class ShoppingCart {
+export class ShoppingCartOld {
 	private price: number;
 
 	add(price: number) {
@@ -18,8 +18,8 @@ export class ShoppingCart {
 	}
 }
 
-export class ShoppingCartNew {
-	private priceList: number[];
+export class ShoppingCart {
+	private priceList: number[] = [];
 
 	add(price: number) {
 		this.priceList.push(price);
