@@ -7,7 +7,7 @@ export class AuthenticatorClient {
 	}
 
 	run() {
-		const authenticated: boolean = this.authenticationService.isAuthenticatedNew(Id.create(33));
+		const authenticated: boolean = this.authenticationService.isAuthenticated(Id.create(33));
 		console.log("33 is authenticated = " + authenticated);
 	}
 

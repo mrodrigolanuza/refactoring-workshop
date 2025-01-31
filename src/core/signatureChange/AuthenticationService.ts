@@ -1,5 +1,5 @@
 export class AuthenticationService {
-	isAuthenticatedNew(id: Id): boolean {
+	isAuthenticated(id: Id): boolean {
 		return (id.equals(Id.create(12345)));
 	}
 }
