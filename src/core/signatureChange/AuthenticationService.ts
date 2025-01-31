@@ -1,8 +1,4 @@
 export class AuthenticationService {
-	isAuthenticated(id: number): boolean {
-		return this.isAuthenticatedNew(Id.create(id));
-		//return (id == 12345);
-	}
 	isAuthenticatedNew(id: Id): boolean {
 		return (id.equals(Id.create(12345)));
 	}
@@ -13,7 +9,7 @@ export class Id {
 		this.id = id;
 	}
 	static create(id: number): Id {
-		if (id <= 0 )
+		if (id <= 0)
 			throw Error(`id ${id} not valid`);
 		return new Id(id);
 	}
