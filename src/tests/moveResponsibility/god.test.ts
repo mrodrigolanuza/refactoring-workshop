@@ -1,13 +1,13 @@
-import { God } from "../../core/moveResponsibility/God";
+import {Arithmetic, God} from "../../core/moveResponsibility/God";
 
-describe('The god class', ()=>{
+describe('The Arithmetic class', ()=>{
   it('adds numbers', ()=>{
     const god = new God();
-    expect(god.add(2, 2)).toBe(4);
+    expect(new Arithmetic().add(2, 2)).toBe(4);
   })
 
   it('subtracts numbers', ()=>{
     const god = new God();
-    expect(god.substract(2, 2)).toBe(0);
+    expect(new Arithmetic().substract(2, 2)).toBe(0);
   })
 })

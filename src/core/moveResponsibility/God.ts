@@ -1,4 +1,4 @@
-export class God {
+export class Arithmetic {
   add(a: number, b: number): number {
     return (a + b);
   }
@@ -6,7 +6,9 @@ export class God {
   substract(a: number, b: number): number {
     return (a - b);
   }
+}
 
+export class God {
   sayHello() {
     console.log("Hello!");
   }
