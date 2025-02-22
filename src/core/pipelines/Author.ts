@@ -12,14 +12,8 @@ export class Author {
 }
 
 export function collectTwitterHandlesBy(authors: Author[], company: string): string[] {
-  const result = [];
-  for (let i = 0; i < authors.length; i++){
-    if (authors[i].company == company) {
-      const handle = authors[i].twitterHandle;
-      if ((handle != null)) {
-        result.push(handle);
-      }
-    }
-  }
-  return result;
+  return authors
+      .filter(author => author.company === company)
+      .map(author => author.twitterHandle)
+      .filter(handle => handle !== null);
 }
